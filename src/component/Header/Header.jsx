@@ -1,7 +1,7 @@
 
 import React from "react"
 import { Container, Row,Col } from "reactstrap";
-import {Link,NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import '../../styles/header.css';
 
 
@@ -27,7 +27,7 @@ const navLinks =[
     display:'Contact'
   },
   
-]
+];
 
 const Header = () => {
   return  <header className="header">
@@ -94,7 +94,7 @@ const Header = () => {
                 </div>
             </Col>
 
-            <Col lg='2' md='3' sm='0' className="text-end">
+            <Col lg='2' md='3' sm='0' className="d-flex align-items-center justify-content-end">
                 <button className="header_btn">
                   <Link to="/contact">
                   <i class="ri-phone-fill"></i>Request a call
@@ -107,29 +107,34 @@ const Header = () => {
 
   {/* ============ Main Navigation ==============*/}
 
-  <div className="main_navbar">
-    <Container>
-      <div className="navigation_wrapper d-flex align-items-center
-      justify-content-between">
-        <span className="mobile_menu">
-        <i class="ri-menu-line"></i>
-        </span>
+<div className="main_navbar">
+  <Container>
+    <div className="navigation_wrapper d-flex align-items-center justify-content-between">
+      <span className="mobile_menu">
+        <i className="ri-menu-line"></i>
+      </span>
       <div className="navigation">
         <div className="menu">
-          navLinks.map((item,index)=(
-            <NavLink to= {item.path} key={index}>{item.display}</NavLink>
-          ))
+          {navLinks.map((item, index) => (
+            <NavLink to={item.path} className={navClass =>navClass.isActive?
+            "nav_active nav_item":"nav_item"} key={index}>
+              {item.display}
+            </NavLink>
+          ))}
         </div>
       </div>
       <div className="nav_right">
         <div className="search_box">
           <input type="text" placeholder="Search" />
-          <span><i class="ri-search-line"></i></span>
+          <span>
+            <i className="ri-search-line"></i>
+          </span>
         </div>
       </div>
-      </div>
-    </Container>
-  </div>
+    </div>
+  </Container>
+</div>
+
 </header>
   
 }

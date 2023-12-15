@@ -102,6 +102,59 @@
 .header_btn a:hover{
     color: white;
 }
+
+/*==========main navbar styles==========*/
  
+.main_navbar{
+    padding: 15px 0px;
+    background: #000d6b;
+}
+.mobile_menu{
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.mobile_menu{
+    display: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+}
+.nav_item{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav_item:hover{
+   color: orange; 
+}
+.search_box{
+    border: 1px solid #7c8a072f;
+    padding: 7px 12px; 
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background: #0a114d;
+}
+
+.search_box input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.search_box input::placeholder{
+    font-size: 0.8rem;
+}
+.search_box span i{
+    color: rgb(121, 115, 115);
+    cursor: pointer;
+}
+.nav_active{
+    color: orange;
+}
 
 
