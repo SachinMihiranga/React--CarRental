@@ -1,0 +1,30 @@
+.footer{
+    background: rgb(7, 7, 142);
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.logo i{ 
+   color: white;
+   font-weight: 400;
+}
+
+.logo span{
+  color: white;
+  font-weight: 500;
+}
+
+.footer_logo-content{
+    color: rgb(139, 129, 129);
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.quick_link{
+    border: none;
+    background: transparent;
+}
+.quick_link a{
+    color: rgb(139, 129, 129);
+    text-decoration: none;
+}
