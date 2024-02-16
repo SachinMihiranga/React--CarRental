@@ -33,6 +33,7 @@ const quickLinks =[
 ]
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return <footer className="footer">
     <Container>
      <Row>
@@ -100,6 +101,15 @@ const Footer = () => {
         </div>
       </Col>
       <Col lg="12">
+        <div className='footer_bottom'>
+          <p className='section_description d-flex align-items-center 
+          justify-content-center gap-1 pt-4'>
+            <i class="ri-copyright-line"></i>Copyright {currentYear},
+            Developed by
+            Sachin Mihiranga. All rights reserved.
+          </p>
+
+        </div>
       </Col>
      </Row>
     </Container>
