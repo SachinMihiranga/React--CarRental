@@ -70,11 +70,11 @@ section{
   border: none;
   outline: none;
   border-radius: 5px;
-
+ transition: 0.3s;
 } 
 
 .btn:hover{
-  color: wheat;
+  color:#fff !important;
   background: blue;
 }
 
