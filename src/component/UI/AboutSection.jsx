@@ -4,7 +4,8 @@ import '../../styles/about-section.css'
 import aboutImg from '../../assets/all-images/bmw-offer.png'
 
 const AboutSection = () => {
-  return <section>
+  return (
+  <section className='about__section '>
     <Container>
         <Row>
             <Col lg='6' md='6'>
@@ -49,6 +50,7 @@ const AboutSection = () => {
         </Row>
     </Container>
   </section>
+  )
 }
 
 export default AboutSection
