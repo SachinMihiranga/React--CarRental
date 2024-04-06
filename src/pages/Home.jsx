@@ -13,6 +13,7 @@ import BecomeDriverSection from '../component/UI/BecomeDriverSection'
 import Testimonial from '../component/UI/Testimonial'
 import BlogList from '../component/UI/BlogList'
 
+
  const Home = () => {
 
    return (
